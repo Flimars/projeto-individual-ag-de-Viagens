@@ -7,7 +7,7 @@ O projeto deve simular o site inicial de uma agência de viagens, com foco na ap
 
 * [Acesse o Repositório no GitHub](https://github.com/Flimars/projeto-individual-ag-de-Viagens/)
 
-* [Acesse Nosso Site](https://povosindegenas.netlify.app/)
+* [Acesse Nosso Site](https://flimars.github.io/projeto-individual-ag-de-Viagens/)
 
 ---
 
