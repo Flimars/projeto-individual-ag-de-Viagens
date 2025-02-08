@@ -3,12 +3,12 @@
 
 /* Definindo variáveis de cores */
 :root {
-    --primary-color: #007bff; /* Azul como cor principal */
-    --secondary-color: #ff8c00; /* Laranja para destaques */
-    --background-color: #d7e9f9; /*Azul ou Cinza claro para fundo #f4f4f9 */
-    --text-color: #333; /* Cor do texto */
-    --text-light: #777; /* Texto secundário */
-    --hover-color: #0056b3; /* Azul escuro para hover */
+    --primary-color: #007bff;
+    --secondary-color: #ff8c00;
+    --background-color: #d7e9f9;
+    --text-color: #333;
+    --text-light: #777;
+    --hover-color: #0056b3;
 }
 
 /* Estilo global */
@@ -51,20 +51,28 @@ header {
 }
 
 .navbar-nav .btn {
-    margin-left: 10px; /* Pequeno espaçamento do botão em relação aos links */
+    margin-left: 10px;
 }
-  
+
+/* Ajustando o menu sanduíche */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 
 /* Banner */
 .hero {
-    background-image: url('images/hero-bg.jpg'); /* Certifique-se de adicionar uma imagem adequada */
+    background-image: url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;   
 }
 
 .hero h1 {
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 3rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -99,7 +107,7 @@ header {
 
 .card-img-top {
     height: 200px;
-    object-fit: cover; /* Imagem de preenchimento */
+    object-fit: cover;
 }
 
 .destinos .card-title {
@@ -155,24 +163,56 @@ footer i {
     font-size: 1.5rem;
 }
 
-/* Botões gerais */
-.btn-primary {
-    background-color: var(--primary-color);
-    border: none;
-    transition: background-color 0.3s;
+/* Responsividade */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    
+    .navbar-nav .btn {
+        display: block;
+        width: 100%;
+    }
 }
 
-.btn-primary:hover {
-    background-color: var(--hover-color);
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .destinos .card-title {
+        font-size: 1.1rem;
+    }
 }
 
-/* Links gerais */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: var(--hover-color);
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .hero .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
 }
