@@ -1,0 +1,178 @@
+/* Importando fontes personalizadas do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Definindo variáveis de cores */
+:root {
+    --primary-color: #007bff; /* Azul como cor principal */
+    --secondary-color: #ff8c00; /* Laranja para destaques */
+    --background-color: #d7e9f9; /*Azul ou Cinza claro para fundo #f4f4f9 */
+    --text-color: #333; /* Cor do texto */
+    --text-light: #777; /* Texto secundário */
+    --hover-color: #0056b3; /* Azul escuro para hover */
+}
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+}
+
+p {
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+/* Estilização do cabeçalho */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.navbar-nav .btn {
+    margin-left: 10px; /* Pequeno espaçamento do botão em relação aos links */
+}
+  
+
+/* Banner */
+.hero {
+    background-image: url('images/hero-bg.jpg'); /* Certifique-se de adicionar uma imagem adequada */
+    background-size: cover;
+    background-position: center;
+    color: #fff;   
+}
+
+.hero h1 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 3rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.hero .btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Destinos populares */
+.destinos .card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destinos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Imagem de preenchimento */
+}
+
+.destinos .card-title {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.destinos .card-text {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/* Sobre nós */
+.sobre {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    width: 3.5rem;
+    height: auto;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--hover-color);
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+/* Botões gerais */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+}
+
+/* Links gerais */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
