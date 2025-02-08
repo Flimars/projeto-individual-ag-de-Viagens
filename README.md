@@ -5,12 +5,7 @@
 
 O projeto deve simular o site inicial de uma agência de viagens, com foco na apresentação visual e no planejamento do banco de dados. Não é necessário implementar funcionalidades dinâmicas ou sistemas interativos nesta fase. 
 
-
-* [Acesse Figma do Projeto](https://www.figma.com/design/NnnFpDu55KePhhF8xtNL3V/Projeto-Indigena-Squad-25?node-id=0-1&m=dev&t=LG2PovfZJaWiqiSd-1)
-
-* [Acesse o Trello](https://trello.com/b/0PejLped/gestao-de-projetos-squad-25)
-
-* [Acesse o Repositório no GitHub](https://github.com/Flimars/projeto-povos-indigenas)
+* [Acesse o Repositório no GitHub](https://github.com/Flimars/projeto-individual-ag-de-Viagens/)
 
 * [Acesse Nosso Site](https://povosindegenas.netlify.app/)
 
